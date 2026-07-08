@@ -30,12 +30,12 @@ export function Hero() {
 
         <p className="mt-6 max-w-xl text-lg text-black/70">
           Serviços de barbearia com precisão e acabamento consistente. Atendimento
-          na GALAB ou em domicílio, com agendamento direto pelo WhatsApp.
+          na GALLAB ou em domicílio, com agendamento direto pelo WhatsApp.
         </p>
 
         <div className="mt-9 flex flex-wrap gap-4">
           <a
-            href={whatsappUrl("Olá! Gostaria de agendar um horário na GALAB.")}
+            href={whatsappUrl("Olá! Gostaria de agendar um horário na GALLAB.")}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-full bg-black px-7 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-[1.02]"

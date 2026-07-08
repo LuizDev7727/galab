@@ -8,7 +8,7 @@ export function HomeService() {
         <div className="aspect-[3/4] overflow-hidden rounded-2xl border border-silver/40">
           <Image
             src="/fotos/foto-dentro.jpeg"
-            alt="Estrutura interna da barbearia GALAB, com cadeira e bancada de trabalho"
+            alt="Estrutura interna da barbearia GALLAB, com cadeira e bancada de trabalho"
             width={1041}
             height={1600}
             className="h-full w-full object-cover"
@@ -23,7 +23,7 @@ export function HomeService() {
             Na barbearia ou no seu endereço
           </h2>
           <p className="mt-4 text-black/70">
-            A GALAB funciona em espaço próprio no Jardim Santa Marta e também
+            A GALLAB funciona em espaço próprio no Jardim Santa Marta e também
             atende em domicílio, com estrutura equivalente à do espaço fixo.
           </p>
 
@@ -31,7 +31,7 @@ export function HomeService() {
             <div className="flex gap-4 rounded-2xl border border-silver/40 bg-white p-5">
               <HomeIcon className="h-6 w-6 shrink-0 text-black" />
               <div>
-                <h3 className="font-bold text-black">Na GALAB</h3>
+                <h3 className="font-bold text-black">Na GALLAB</h3>
                 <p className="mt-1 text-sm text-black/70">
                   Atendimento no espaço próprio, no Jardim Santa Marta, Sorocaba.
                 </p>

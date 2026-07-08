@@ -37,7 +37,7 @@ export function Differentials() {
           Diferenciais
         </p>
         <h2 className="mt-3 text-3xl font-extrabold text-black sm:text-4xl">
-          Por que agendar com a GALAB
+          Por que agendar com a GALLAB
         </h2>
       </div>
 

@@ -4,7 +4,7 @@ import { WhatsAppIcon } from "./icons";
 export function WhatsAppFloatingButton() {
   return (
     <a
-      href={whatsappUrl("Olá! Gostaria de agendar um horário na GALAB.")}
+      href={whatsappUrl("Olá! Gostaria de agendar um horário na GALLAB.")}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Agendar horário pelo WhatsApp"

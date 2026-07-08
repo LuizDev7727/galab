@@ -1,4 +1,4 @@
-# GALAB
+# GALLAB
 
 Landing page one-page da GALAB, barbearia em Sorocaba/SP. Apresenta serviços e
 preços, atendimento no espaço fixo e em domicílio, diferenciais, galeria de

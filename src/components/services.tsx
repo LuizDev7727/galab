@@ -101,7 +101,7 @@ export function Services() {
       </div>
 
       <a
-        href={whatsappUrl("Olá! Gostaria de saber mais sobre os serviços da GALAB.")}
+        href={whatsappUrl("Olá! Gostaria de saber mais sobre os serviços da GALLAB.")}
         target="_blank"
         rel="noopener noreferrer"
         className="mt-8 inline-flex text-sm font-semibold text-black underline underline-offset-4"

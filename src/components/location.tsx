@@ -9,7 +9,7 @@ export function Location() {
           Localização
         </p>
         <h2 className="mt-3 text-3xl font-extrabold text-black sm:text-4xl">
-          Onde encontrar a GALAB
+          Onde encontrar a GALLAB
         </h2>
       </div>
 
@@ -17,7 +17,7 @@ export function Location() {
         <div className="overflow-hidden rounded-2xl border border-silver/40">
           <iframe
             src={mapsEmbedSrc}
-            title="Localização da GALAB no Google Maps"
+            title="Localização da GALLAB no Google Maps"
             width="100%"
             height="100%"
             style={{ border: 0, minHeight: 320 }}

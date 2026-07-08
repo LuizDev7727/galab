@@ -19,7 +19,7 @@ export function Header() {
     <header className="sticky top-0 z-40 border-b border-silver/40 bg-white/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         <a href="#" className="text-xl font-extrabold tracking-[0.2em] text-black">
-          GALAB
+          GALLAB
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -35,7 +35,7 @@ export function Header() {
         </nav>
 
         <a
-          href={whatsappUrl("Olá! Gostaria de agendar um horário na GALAB.")}
+          href={whatsappUrl("Olá! Gostaria de agendar um horário na GALLAB.")}
           target="_blank"
           rel="noopener noreferrer"
           className="hidden items-center gap-2 rounded-full bg-black px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-black/85 md:flex"
@@ -67,7 +67,7 @@ export function Header() {
             </a>
           ))}
           <a
-            href={whatsappUrl("Olá! Gostaria de agendar um horário na GALAB.")}
+            href={whatsappUrl("Olá! Gostaria de agendar um horário na GALLAB.")}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
