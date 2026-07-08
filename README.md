@@ -1,45 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GALAB
 
-## Getting Started
+Landing page one-page da GALAB, barbearia em Sorocaba/SP. Apresenta serviços e
+preços, atendimento no espaço fixo e em domicílio, diferenciais, galeria de
+trabalhos, localização com mapa integrado e agendamento direto via WhatsApp.
 
-https://dribbble.com/shots/26714320-Barbershop-in-Philly-landing-page-web-design
-https://dribbble.com/shots/26079016-Barber-Shop-Landing-Page
-https://dribbble.com/shots/19544062-Barbershop-Landing-Page-Design
-https://dribbble.com/shots/26623424-Barber-Shop-Landing-Page-Design
-https://dribbble.com/shots/21037117-Mett-Barber-Shop-Landing-page-white
-https://dribbble.com/shots/25866564-Spa-Salon-Barber-Website-landing-page-design
-https://dribbble.com/shots/20831488-Mett-Barber-Shop-Landing-Page-Design-Concept
-https://dribbble.com/shots/26668855-Shine-Inspired-Looks-Barber-Shop-Landing-Page
+## Stack
 
-First, run the development server:
+- [Next.js 16](https://nextjs.org) (App Router)
+- [React 19](https://react.dev)
+- [Tailwind CSS v4](https://tailwindcss.com)
+- [Biome](https://biomejs.dev) (lint e format)
+- [pnpm](https://pnpm.io)
+
+## Rodando localmente
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Comando       | Descrição                         |
+| ------------- | ---------------------------------- |
+| `pnpm dev`    | Sobe o servidor de desenvolvimento |
+| `pnpm build`  | Gera o build de produção           |
+| `pnpm start`  | Sobe o build de produção           |
+| `pnpm lint`   | Roda o Biome em modo checagem      |
+| `pnpm format` | Formata o código com o Biome       |
 
-## Learn More
+## Estrutura
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/
+    layout.tsx           # Fonte (Poppins), metadata e HTML raiz
+    page.tsx              # Composição das seções da página
+    globals.css            # Paleta de cores (@theme) e estilos globais
+  components/
+    header.tsx              # Navegação fixa + menu mobile
+    hero.tsx                 # Seção de abertura
+    services.tsx              # Tabela de serviços e preços
+    home-service.tsx           # Atendimento fixo x domicílio
+    differentials.tsx           # Diferenciais do serviço
+    gallery.tsx                  # Grid de fotos de trabalhos
+    location.tsx                  # Mapa, endereço e horário
+    footer.tsx                     # Rodapé com contato e redes
+    whatsapp-button.tsx             # Botão flutuante de WhatsApp
+    icons.tsx                        # Ícones SVG usados nos componentes
+  lib/
+    site.ts       # Dados do negócio: WhatsApp, Instagram, endereço, mapa, horário
+public/
+  fotos/          # Fotos usadas na galeria e na seção de atendimento
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Paleta de cores
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Definida em `src/app/globals.css`:
 
-## Deploy on Vercel
+| Cor    | Hex       |
+| ------ | --------- |
+| Preto  | `#0a0a0a` |
+| Prata  | `#c0c0c0` |
+| Branco | `#ffffff` |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Disponíveis como classes Tailwind (`bg-black`, `text-silver`, `border-white`, etc.).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Atualizando informações do negócio
+
+Os dados exibidos no site (número de WhatsApp, Instagram, endereço, iframe do
+Google Maps e horário de funcionamento) ficam centralizados em
+`src/lib/site.ts` — basta editar esse arquivo para refletir mudanças.
+
+Novas fotos para a galeria podem ser adicionadas em `public/fotos/` e
+referenciadas em `src/components/gallery.tsx`.
