@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "GALAB Barbearia | Sorocaba",
+  title: "GALLAB Barbearia | Sorocaba",
   description:
     "Corte, barba e serviços de barbearia em Sorocaba. Atendimento na barbearia ou em domicílio no Jardim Santa Marta e região.",
 };
@@ -21,7 +21,10 @@ type RootLayoutProps = Readonly<{
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" className={`${poppins.variable} h-full scroll-smooth antialiased`}>
+    <html
+      lang="en"
+      className={`${poppins.variable} h-full scroll-smooth antialiased`}
+    >
       <body>{children}</body>
     </html>
   );
