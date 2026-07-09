@@ -18,7 +18,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-silver/40 bg-white/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-        <a href="#" className="text-xl font-extrabold tracking-[0.2em] text-black">
+        <a
+          href="#"
+          className="text-xl font-extrabold tracking-[0.2em] text-black"
+        >
           GALLAB
         </a>
 
@@ -50,7 +53,11 @@ export function Header() {
           onClick={() => setOpen((v) => !v)}
           className="flex h-10 w-10 items-center justify-center rounded-full border border-silver/60 text-black md:hidden"
         >
-          {open ? <CloseIcon className="h-5 w-5" /> : <MenuIcon className="h-5 w-5" />}
+          {open ? (
+            <CloseIcon className="h-5 w-5" />
+          ) : (
+            <MenuIcon className="h-5 w-5" />
+          )}
         </button>
       </div>
 
