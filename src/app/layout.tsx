@@ -47,6 +47,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html
       lang="en"
       className={`${poppins.variable} h-full scroll-smooth antialiased`}
+      <link rel="icon" href="/favicon.png" sizes="any" />
     >
       <body>
         <Analytics/>
